@@ -97,7 +97,7 @@ async def private_receive_handler(c: Client, m: Message):
         
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 FFFF 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
+<i><u>gdk; alh shoki an  !</u></i>
 
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>
 
