@@ -148,6 +148,11 @@ async def channel_receive_handler(bot, broadcast):
                 ]
             )
         )
+        await broadcast.reply_text(
+            text=f"**7Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream_link}",
+            quote=True,
+            parse_mode="Markdown"
+        )
     except FloodWait as w:
         print(f"Sleeping for {str(w.x)}s")
         await asyncio.sleep(w.x)
