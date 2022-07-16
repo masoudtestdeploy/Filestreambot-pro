@@ -24,9 +24,9 @@ routes = web.RouteTableDef()
 async def root_route_handler(_):
     return web.json_response(
         {
-            "server_status": "running",
+            "server_status": "running OK",
             "uptime": get_readable_time(time.time() - StartTime),
-            "telegram_bot": "@" + StreamBot.username,
+            "channel": "@KenzoMovie",
             "connected_bots": len(multi_clients),
             "loads": dict(
                 ("bot" + str(c + 1), l)
